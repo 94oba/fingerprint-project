@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerprint-based Online Voting System - Cast Vote</title>
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+    <header>
+        <h1>Fingerprint-based Online Voting System</h1>
+        <h2>Cast Your Vote</h2>
+    </header>
+
+    <main>
+        <form action="vote.php" method="post">
+            <label for="voter_id">Voter ID:</label>
+            <input type="text" id="voter_id" name="voter_id" required><br>
+        <div id="fingerprint-container">
+            <label for="fingerprint">Fingerprint Data:</label>
+            <button type="button" id="fingerprint">Scan Fingerprint</button>
+        </div>
+            <label for="candidate">Select Candidate:</label>
+            <select id="candidate" name="candidate" required>
+                <option value="" disabled selected>Select Candidate</option>
+                <option value="candidate1">Candidate 1</option>
+                <option value="candidate2">Candidate 2</option>
+                <!-- Add more candidate options as needed -->
+            </select><br>
+            <div class="vote-buttons">
+                <button type="submit" class="btn-vote">Cast Vote</button>
+            </div>
+        </form>
+    </main>
+<script src="vote.js"></script>
+</body>
+</html>

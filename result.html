@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> <title>View Results</title>
+    <link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+<div class="container">
+    <h2>View Results</h2>
+    <form id="select-election-form">
+        <div class="form-group">
+            <label for="election-select">Select Election:</label>
+            <select id="election-select" required> <option value="2018">-- Select --</option>
+                <!-- Election options will be dynamically added here --> </select> </div>
+    <div class="form-group">
+        <input type="submit" value="View Results">
+    </div>
+    </form>
+    <div id="results-container"> <!-- Election results will be dynamically added here --> </div>
+</div>
+<script src="result.js"></script>
+</body>
+</html>

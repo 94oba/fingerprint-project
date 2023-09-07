@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-buttons a {
+    display: block;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-buttons a:hover {
+    background-color: #0056b3;
+}
+
+.btn-login {
+    background-color: #28a745;
+    /* Green */
+}
+
+.btn-cast-vote {
+    background-color: #ffc107;
+    /* Yellow */
+}
+
+.btn-view-results {
+    background-color: #dc3545;
+    /* Red */
+}

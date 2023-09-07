@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fingerprint-based Online Voting System - Login</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Fingerprint-based Online Voting System</h1>
+        <h2>Login</h2>
+    </header>
+    <main>
+        <form action="login_process.php" method="post">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <h1 class="fingerprint mt-4 mb-5">
+              <p>Please place your finger on the fingerprint scanner:<br>
+            </h1>
+             <div id="fingerprint-container">
+            <label for="scan_fingerprint">Fingerprint Data:</label>
+            <button type="button" id="scan_fingerprint">Scan Fingerprint</button>
+        </div>
+            <button type="submit" class="btn-login">Login</button>
+            <div class="login-buttons">
+                <a href="register.html" class="btn-login">create new account</a>
+                <a href="admin login.html" class="btn-login">Login as Admin</a>
+            </div>
+        </form>
+    </main>
+<script  src="login.js"></script>
+</body>
+</html>

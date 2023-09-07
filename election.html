@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Election Management</title>
+    <link rel="stylesheet" type="text/css" href="election.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Election Management</h2>
+        <form id="add-election-form" method="post" action=" get election.php">
+            <div class="form-group">
+                <label for="election-name">Election Name:</label>
+                <input type="text" id="election-name" name="election-name" required>
+            </div>
+            <div class="form-group">
+                <label for="election-date">Election Date:</label>
+                <input type="date" id="election-date" name="election-date" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Election">
+            </div>
+        </form>
+
+        <h3>Election List</h3>
+        <ul id="election-list">
+            <!-- Election items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="election.js"></script>
+</body>
+</html>

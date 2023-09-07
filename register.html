@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fingerprint-based Online Voting System</title>
+    <!-- Include your CSS file here -->
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <h2>Voter Registration</h2>
+    <form id="registration-form" action="registration.php" method="POST">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <!-- Placeholder for fingerprint data input -->
+        <div id="fingerprint-container">
+            <label for="fingerprint_data">Fingerprint Data:</label>
+            <button type="button" id="fingerprint_data">Scan Fingerprint</button>
+        </div>
+
+        <button type="submit" name="register">Register</button>
+    </form>
+
+    <!-- Include your JavaScript file here -->
+    <script src="register.js"></script>
+</body>
+</html>
